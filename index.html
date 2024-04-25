@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise and Sunset</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFooter.css">
+    
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/photo/logo_grey.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="api.html">API</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <div id="google_translate_element" class="text-center"></div>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#" id="logout" onclick="Logout()">Logout</a>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </nav>
+    </header>
+    <main class="container-fluid" id="main_index">
+        <section>
+            <div id="current-time" class="col-12 col-lg-12 col-md-12 col-sm-12"></div>
+        </section>
+        <section>
+            <div id="location" class="col-12 col-lg-12 col-md-12 col-sm-12">Novi Pazar</div>
+            <div id="date" class="col-12 col-lg-12 col-md-12 col-sm-12"></div>
+        </section>
+        <section>
+            <div id="response" class="row">
+                <div id="response1" class="col-4 col-lg-4 col-md-4 col-sm-12 d-flex"></div>
+                <div id="response2" class="col-4 col-lg-4 col-md-4 col-sm-12 d-flex"></div>
+                <div id="response3" class="col-4 col-lg-4 col-md-4 col-sm-12 d-flex"></div>
+            </div>
+        </section>
+        <button id="scrollToTopBtn" class="btn btn-primary" onclick="scrollToTop()">&uarr;</button>
+    </main>
+    <div class="footer-basic bg-light">
+      <footer>
+        <div class="social">
+            <a href="https://www.instagram.com/" id="icon" target="blank"><i class="icon ion-social-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/" id="icon" target="blank"><i class="icon ion-social-linkedin"></i>
+            </a>
+            <a href="https://www.twitter.com/" id="icon" target="blank"><i class="icon ion-social-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/" id="icon" target="blank"><i class="icon ion-social-facebook"></i>
+            </a>
+          </div>
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://sunrisesunset.io/api/" target="_blank">API</a></li>
+          </ul>
+          <p class="copyright">If you like our web site <a href="https://www.buymeacoffee.com/dzemil" target="_blank">buy us a coffe</a> <i id="coffee" class="fa fa-coffee"></i> </p>
+          <p class="copyright">Powered by SunriseSunset.io</p>
+          <p class="copyright">Sunrise and Sunset © 2024</p>
+      </footer>
+    <script src="script.js"></script>
+    <script src="scriptIndex.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  </body>
+
+</body>
+</html>
